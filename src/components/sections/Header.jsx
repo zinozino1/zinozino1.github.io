@@ -22,24 +22,29 @@ const HeaderWrapper = styled.header`
 
 const HeaderTopWrapper = styled.div`
   display: flex;
-  border: 1px solid #fff;
+  justify-content: space-between;
+  padding: 10px;
+  /* border: 1px solid #fff; */
+  font-family: "S-CoreDream-3Light", sans-serif;
+  font-size: 12px;
+  .header-name {
+  }
+  .header-copyright {
+  }
 `
 
 const HeaderMiddleWrapper = styled.div`
   position: relative;
-  border: 1px solid white;
 `
 
-const HeaderBottomWrapper = styled.div`
-  border: 1px solid white;
-`
+const HeaderBottomWrapper = styled.div``
 
 const ProfileImageWrapper = styled.div`
   text-align: center;
   .profile-image {
     transition: 0.5s;
     width: 450px;
-    border: 2px solid white;
+    border-bottom: 3px solid white;
   }
 `
 const TextContainer = styled.div`
@@ -60,7 +65,6 @@ const TextContainer = styled.div`
 const TopFlowText = styled.div`
   font-family: "Anton", sans-serif;
   color: #60e1d4;
-  /* -webkit-text-stroke: 0.02em #60e1d4; */
 `
 
 const BottomFlowText = styled.div`
@@ -96,8 +100,10 @@ const Header = () => {
   return (
     <HeaderWrapper ref={startTrigger}>
       <HeaderTopWrapper className="header-top">
-        <span className="my-name">{`<JINHO PARK />`}</span>
-        <span className="header-copyright"></span>
+        <span className="header-name">{`<JINHO PARK />`}</span>
+        <span className="header-copyright">
+          Copyright &copy; {new Date().getFullYear()} | All rights reserved.
+        </span>
       </HeaderTopWrapper>
       <HeaderMiddleWrapper className="header-middle" maxWidth="auto">
         <ProfileImageWrapper>
