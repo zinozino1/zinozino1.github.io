@@ -2,6 +2,9 @@ import React, { useEffect } from "react"
 import styled from "styled-components"
 import Header from "../components/sections/Header"
 import About from "../components/sections/About"
+import Project from "../components/sections/Project"
+import Stack from "../components/sections/Stack"
+import Contact from "../components/sections/Contact"
 
 const MainWrapper = styled.div``
 
@@ -21,14 +24,16 @@ const UpButton = styled.div`
 
 const index = () => {
   const onClickUpTo = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    window.scrollTo({ top: "50vh", behavior: "smooth" })
   }
 
   return (
     <MainWrapper>
       <Header />
       <About />
-      <div style={{ height: "100vh" }}>1</div>
+      <Project />
+      <Stack />
+      <Contact />
       <UpButton onClick={onClickUpTo}>⌃</UpButton>
     </MainWrapper>
   )
