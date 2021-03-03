@@ -13,14 +13,12 @@ const StackContentWrapper = styled.div`
 
 const StackLeft = styled.div`
   flex: 1;
-  border: 1px solid #fff;
-  /* background: #31c46e; */
+  /* border: 1px solid #fff; */
+
   font-size: 7rem;
   font-weight: 600;
   position: relative;
 
-  /* color: transparent; */
-  /* padding: 30px; */
   -webkit-text-stroke: 0.02em #fff;
   .stack-title {
     position: absolute;
@@ -28,7 +26,7 @@ const StackLeft = styled.div`
     left: -40%;
     font-size: 7rem;
     font-weight: 600;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 50%;
     -webkit-text-stroke: 0.02em #fff;
     -webkit-transform: rotate(-90deg);
@@ -38,19 +36,19 @@ const StackLeft = styled.div`
 `
 
 const StackRight = styled.div`
-  flex: 6;
-  border: 1px solid #fff;
+  flex: 5;
+  /* border: 1px solid #fff; */
   padding: 30px;
   .subtitle {
     padding: 30px 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     span {
       font-size: 3rem;
     }
   }
   .stack-item-wrapper {
     padding: 30px 0;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     span {
       padding: 10px 15px;
       margin-right: 15px;
@@ -94,6 +92,14 @@ const Stack = () => {
               <span>MySQL ★★★</span>
               <span>MongoDB ★★★★</span>
               <span>Firebase ★★★</span>
+            </div>
+            <div className="subtitle">
+              <span>DEVOPS & CLOUD</span>
+            </div>
+            <div className="stack-item-wrapper">
+              <span>GITHUB ★★★</span>
+              <span>AWS EC2 ★★</span>
+              <span>AWS LAMBDA ★</span>
             </div>
           </StackRight>
         </StackContentWrapper>
