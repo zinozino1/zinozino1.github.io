@@ -1,0 +1,7 @@
+{
+  "main.js": "render-page.js",
+  "render-page.js.map": "render-page.js.map",
+  "static/profile_dark_image_removebg.png": "static/profile_dark_image_removebg-e6dd14dc799cac04fb1c5a26345d381e.png",
+  "static/project_image1.png": "static/project_image1-2eb34d497789d23fe7aa68953702f20e.png",
+  "static/project_image2.png": "static/project_image2-1b83ae342c11f4608cc2c8447f4de510.png"
+}
