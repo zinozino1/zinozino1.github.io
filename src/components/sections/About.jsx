@@ -8,7 +8,7 @@ const AboutWrapper = styled.div`
 `
 
 const AboutHeader = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 20%;
   font-size: 7rem;
   font-weight: 600;
@@ -18,13 +18,13 @@ const AboutHeader = styled.div`
 `
 
 const AboutSection = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 80%;
   display: flex;
 `
 
 const SectionLeft = styled.div`
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -66,18 +66,28 @@ const SectionLeft = styled.div`
 `
 
 const SectionRight = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   flex: 3;
   .name-wrapper {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     font-size: 5rem;
     text-align: right;
     padding: 30px;
     background: #ffb704;
   }
+  .content-container {
+    display: flex;
+  }
+  .content-blank {
+    flex: 1;
+    /* border: 1px solid orange; */
+  }
   .content {
-    border: 1px solid #fff;
-    padding: 30px;
+    flex: 2;
+    margin: 0;
+    /* border: 1px solid #fff; */
+    padding: 60px 30px;
+    line-height: 3rem;
   }
 `
 
@@ -150,11 +160,16 @@ const About = () => {
           </SectionLeft>
           <SectionRight>
             <div className="name-wrapper">PARK JINHO</div>
-            <p className="content">
-              다양한 사람들과 협업을 통해서 함께 공동의 목표를 성취해 나가는
-              것에 관심이 많습니다. 나아가 실패를 겁내지 않고 도전하는 것이
-              행복합니다.
-            </p>
+            <div className="content-container">
+              <div className="content-blank"></div>
+              <p className="content">
+                다양한 사람들과 협업을 통해서 함께 공동의 목표를 성취해 나가는
+                것에 관심이 많습니다. 나아가 실패를 겁내지 않고 도전하는 것이
+                행복합니다. 또한 만들고자 하는 목표에 대해 필요한 기술들을
+                빠르게 습득하고 구현할 수 있습니다. 할 수 있는 경계선을 더 넓혀
+                나가고자 합니다.
+              </p>
+            </div>
           </SectionRight>
         </AboutSection>
       </ContentLayout>
