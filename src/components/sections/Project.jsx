@@ -89,7 +89,6 @@ const ProjectSection = styled.div`
   .slick-prev,
   .slick-next {
     color: #fff;
-
     width: 20px;
     height: 20px;
     &:before {
@@ -135,6 +134,10 @@ const Project = () => {
                   <div className="desc-info-text">2021.1 - 2021.2 </div>
                   <div className="desc-info-subtitle">ROLE</div>
                   <div className="desc-info-text">Web Frontend</div>
+                  <div className="desc-info-subtitle">TECH STACK</div>
+                  <div className="desc-info-text">
+                    React.js Next.js ExpressJS MongoDB AWS
+                  </div>
                 </div>
                 <div className="desc-paragraph">
                   <div>
@@ -168,6 +171,10 @@ const Project = () => {
                   <div className="desc-info-text">2020.10 - 2020.12 </div>
                   <div className="desc-info-subtitle">ROLE</div>
                   <div className="desc-info-text">Web FullStack</div>
+                  <div className="desc-info-subtitle">TECH STACK</div>
+                  <div className="desc-info-text">
+                    JS CSS Pug ExpressJS MongoDB AWS
+                  </div>
                 </div>
                 <div className="desc-paragraph">
                   <div>
